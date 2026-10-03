@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: warehouse-access-classification-auditor
+version: 0.1.0
+description: Review warehouse grants against declared dataset classifications and approved roles.
+skills:
+  - warehouse-access-classification-auditor-skill
+tools:
+  - review-warehouse-access-classification-auditor
+tags:
+  - data-analytics
+  - evidence-driven

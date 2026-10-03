@@ -1,0 +1,12 @@
+{
+  "datasets": [
+    "record-1"
+  ],
+  "classifications": {
+    "sample": "evidence"
+  },
+  "role_grants": [
+    "record-1"
+  ],
+  "approval_evidence": "evidence-record"
+}

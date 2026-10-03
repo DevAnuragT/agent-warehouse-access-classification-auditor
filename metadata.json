@@ -1,0 +1,29 @@
+{
+  "slug": "warehouse-access-classification-auditor",
+  "title": "Warehouse Access Classification Auditor",
+  "category": "data-analytics",
+  "description": "Review warehouse grants against declared dataset classifications and approved roles.",
+  "fields": {
+    "datasets": {
+      "label": "datasets",
+      "kind": "list",
+      "minimum": 1
+    },
+    "classifications": {
+      "label": "classifications",
+      "kind": "object",
+      "minimum": 1
+    },
+    "role_grants": {
+      "label": "role grants",
+      "kind": "list",
+      "minimum": 1
+    },
+    "approval_evidence": {
+      "label": "approval evidence",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

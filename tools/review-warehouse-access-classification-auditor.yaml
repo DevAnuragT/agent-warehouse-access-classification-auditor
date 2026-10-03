@@ -1,0 +1,59 @@
+{
+  "name": "review-warehouse-access-classification-auditor",
+  "description": "Run Warehouse Access Classification Auditor",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "datasets": {
+            "type": "array",
+            "description": "datasets"
+          },
+          "classifications": {
+            "type": "object",
+            "description": "classifications"
+          },
+          "role_grants": {
+            "type": "array",
+            "description": "role grants"
+          },
+          "approval_evidence": {
+            "type": "string",
+            "description": "approval evidence"
+          }
+        },
+        "required": [
+          "datasets",
+          "classifications",
+          "role_grants",
+          "approval_evidence"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-warehouse-access-classification-auditor.py",
+    "runtime": "python3"
+  }
+}
